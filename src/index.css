@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dropdown-button {
+    @apply w-[30px] h-[2.5px] rounded-full my-2 block bg-white group-hover:bg-yellow-600 ease-in-out duration-300;
+  }
+  .hamburger-active > span:nth-child(1) {
+    @apply -rotate-45;
+  }
+  .hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+  }
+  .hamburger-active > span:nth-child(3) {
+    @apply rotate-45;
+  }
+  .navbar-shadow {
+    @apply shadow-lg;
+  }
+  .socmed-hover {
+    @apply hover:text-amber-600 ease-in-out duration-300;
+  }
+  .album-cover {
+    @apply 2xl:w-[300px] xl:w-[250px] w-[200px] group-hover:-translate-y-3 ease-in-out duration-300;
+  }
+  .gallery-card {
+    @apply p-6 rounded-lg shadow-lg hover:-translate-y-4 ease-in-out duration-300;
+  }
+  .hero-slide-in {
+    @apply sm:-translate-x-[500px] md:-translate-x-[1000px] lg:translate-x-[800px];
+  }
+  .about-slide-in-right {
+    @apply sm:-translate-x-[500px] md:-translate-x-[1000px] lg:translate-x-[800px];
+  }
+  .about-slide-in-left {
+    @apply sm:-translate-x-[500px] md:translate-x-[1000px] lg:-translate-x-[800px];
+  }
+  .album-slide-in {
+    @apply sm:translate-y-[1650px] md:translate-y-[700px] lg:translate-y-[900px];
+  }
+  .gallery-slide-in {
+    @apply sm:translate-y-[2800px] md:translate-y-[2550px] lg:translate-y-[1800px];
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
