@@ -13,7 +13,7 @@ export default function AlbumsSingles(props) {
         <Heading heading="Singles & EPs" />
         <span className="block mx-auto lg:w-[200px] sm:w-[120px] h-[3px] rounded-full bg-amber-700 mt-6"></span>
         <div className="flex flex-wrap mt-16 self-center justify-between album-slide-in text-white ease-in-out duration-[2s]" id="album">
-          <div className="group 2xl:mx-0 xl:mx-0 lg:mx-0 md:mx-auto sm:mx-auto">
+          <div className="p-5 group 2xl:mx-0 xl:mx-0 lg:mx-0 md:mx-auto sm:mx-auto">
               <img src={HatiDanLogika} alt="Hati dan Logika" className="album-cover" />
               <span className="block mt-4 text-center font-semibold group-hover:-translate-y-3 ease-in-out duration-300">Hati Dan Logika | 2021</span>
               <MusicLinks spotify="https://open.spotify.com/album/29EMsuf8aRlusErZzNDrpY?si=Srj0DctaQf6cgrj930SQsg" applemusic="https://music.apple.com/id/album/hati-dan-logika/1596639068?i=1596639070" youtube="https://www.youtube.com/watch?v=q6UmNTwr8L8" />

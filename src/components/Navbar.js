@@ -28,9 +28,9 @@ export default function Navbar(props){
                                 <li className="group">
                                     <a href="#home" className="flex py-2 px-2 group-hover:text-amber-600 ease-in-out duration-300 items-center"><i className="fa-solid fa-house-chimney-window"></i>&nbsp; Home</a>
                                 </li>
-                                <li className="group">
+                                {/* <li className="group">
                                     <a href="#about" className="flex py-2 px-2 group-hover:text-amber-600 ease-in-out duration-300 items-center"><i class="fa-solid fa-circle-info"></i>&nbsp; About</a>
-                                </li>
+                                </li> */}
                                 <li className="group">
                                     <a href="#albums" className="flex py-2 px-2 group-hover:text-amber-600 ease-in-out duration-300 items-center"><i class="fa-solid fa-music"></i>&nbsp; Singles & EPs</a>
                                 </li>

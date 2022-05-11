@@ -1,18 +1,17 @@
 import React from 'react'
 import Misellia_1 from '../images/misellia/misel_6.jpg';
 import Misellia_9 from '../images/misellia/misel_9.jpg';
-import Heading from './Heading';
 
 export default function About(props) {
   return (
     <div id={props.id} className="2xl:px-28 xl:px-28 lg:px-20 md:px-32 sm:px-8 pb-[100px] 2xl:pt-[100px] xl:pt-[100px] lg:pt-[100px] md:pt-[80px] sm:pt-[80px] text-stone-800 mt-16 overflow-hidden">
-        <Heading heading="About Misellia" style={{ fontFamily: "IBM Plex Serif" }} />
-        <span className="block mx-auto lg:w-[200px] sm:w-[130px] h-[3px] rounded-full my-2 bg-amber-700 mt-3"></span>
+        <h3 className="xl:text-6xl lg:text-6xl md:text-5xl sm:text-4xl font-extrabold text-center leading-10 cursor-default about-heading-slide-in ease-in-out duration-[1s] hover:-translate-y-4" id="about-heading">Happy Birthday, Misell!</h3>
+        <span className="block mx-auto lg:w-[200px] sm:w-[130px] h-[3px] rounded-full my-10 bg-amber-700"></span>
         <div className="flex flex-wrap lg:mt-24 sm:mt-14 self-center">
             <div className="2xl:w-1/2 xl:w-1/2 lg:w-1/2 sm:w-full">
                 <div className="relative sm:mb-20 md:mb-14">
                     <img src={ Misellia_1 } className="2xl:l-0 xl:ml-0 lg:ml-0 md:mx-auto sm:mx-auto 2xl:w-[340px] xl:w-[340px] lg:w-[320px] md:w-[300px] sm:w-[280px] sm:hover:w-[300px] md:hover:w-[320px] lg:hover:w-[340px] xl:hover:w-[360px] 2xl:hover:w-[360px] ease-in-out duration-500 block rounded-md xl:mt-0 lg:mt-0 md:mt-10 sm:mt-10" alt="Misellia Ikwan" />
-                    <div className="absolute sm:py-[140px] md:py-[140px] lg:py-[160px] xl:py-[165px] 2xl:px-[170px] 2xl:py-[170px] sm:px-[140px] md:px-[140px] lg:px-[160px] xl:px-[170px] bottom-0 translate-y-[20px] 2xl:-translate-x-[20px] xl:-translate-x-[20px] lg:-translate-x-[20px] md:translate-x-[190px] -z-20 rounded-md bg-gradient-to-br from-amber-700 to-stone-900"></div>
+                    <h1 className="sm:text-[10rem] lg:text-[12rem] absolute bottom-0 sm:translate-y-[100px] lg:translate-y-[130px] sm:translate-x-[180px] text-transparent bg-clip-text bg-gradient-to-br from-white to-amber-800">18</h1>
                 </div>
             </div>
             <div className="2xl:w-1/2 xl:w-1/2 lg:w-1/2 sm:w-full text-stone-700">

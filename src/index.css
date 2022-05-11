@@ -30,6 +30,9 @@
   .hero-slide-in {
     @apply sm:-translate-x-[500px] md:-translate-x-[1000px] lg:translate-x-[800px];
   }
+  .hero-more-slide-in {
+    @apply sm:-translate-x-[500px] md:-translate-x-[1000px] lg:translate-x-[800px];
+  }
   .about-slide-in-right {
     @apply sm:-translate-x-[500px] md:-translate-x-[1000px] lg:translate-x-[800px];
   }
@@ -41,6 +44,9 @@
   }
   .gallery-slide-in {
     @apply sm:translate-y-[2800px] md:translate-y-[2550px] lg:translate-y-[1800px];
+  }
+  .about-heading-slide-in {
+    @apply lg:-translate-y-[180px] sm:-translate-y-[160px];
   }
 }
 

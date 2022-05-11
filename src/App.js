@@ -9,6 +9,7 @@ import Gallery from './components/Gallery';
 export default function App() {
   window.onscroll = function (){
         const hero_text = document.querySelector("#hero-text");
+        const hero_more = document.querySelector("#hero-more");
         const about = document.querySelector("#about");
         const about_offset = about.offsetTop;
         const about_text_left = document.querySelector("#about-text-left");
@@ -20,6 +21,8 @@ export default function App() {
         const gallery_offset = gallery.offsetTop;
         const photos = document.querySelector("#photos");
         const navbar = document.querySelector("#navbar");
+        const about_heading = document.querySelector("#about-heading");
+        const hero_more_offset = hero_more.offsetTop;
 
         if(window.pageYOffset >= about_offset){
             navbar.classList.add("navbar-shadow");
@@ -29,11 +32,16 @@ export default function App() {
 
         if(window.pageYOffset){
             hero_text.classList.remove('hero-slide-in');
+            hero_more.classList.remove('hero-more-slide-in');            
         }
 
         if(window.pageYOffset >= about_offset){
           about_text_right.classList.remove('about-slide-in-right')
           about_text_left.classList.remove('about-slide-in-left');
+        }
+        
+        if(window.pageYOffset >= hero_more_offset){
+          about_heading.classList.remove('about-heading-slide-in');
         }
 
         if(window.pageYOffset >= album_offset){
@@ -49,8 +57,8 @@ export default function App() {
       <Navbar id="navbar" />
       <Hero id="home" />
       <About id="about" />
-      <AlbumsSingles id="albums" />
       <Gallery id="gallery" />
+      <AlbumsSingles id="albums" />
       <Footer />
     </div>
   );
