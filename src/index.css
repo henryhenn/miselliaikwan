@@ -34,10 +34,7 @@
     @apply sm:-translate-x-[500px] md:-translate-x-[1000px] lg:translate-x-[800px];
   }
   .about-slide-in-right {
-    @apply sm:-translate-x-[500px] md:-translate-x-[1000px] lg:translate-x-[800px];
-  }
-  .about-slide-in-left {
-    @apply sm:-translate-x-[500px] md:translate-x-[1000px] lg:-translate-x-[800px];
+    @apply sm:translate-y-[500px] md:-translate-y-[1000px] lg:translate-y-[800px];
   }
   .album-slide-in {
     @apply sm:translate-y-[1650px] md:translate-y-[700px] lg:translate-y-[900px];
@@ -47,6 +44,12 @@
   }
   .about-heading-slide-in {
     @apply lg:-translate-y-[180px] sm:-translate-y-[160px];
+  }
+  .hero-number-slide-in {
+    @apply sm:translate-x-[170px] lg:translate-x-[160px];
+  }
+  .about-image-slide-in {
+    @apply sm:translate-x-[400px] md:translate-x-[600px] lg:-translate-x-[500px];
   }
 }
 

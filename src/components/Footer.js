@@ -10,7 +10,7 @@ export default function Footer() {
     const gmail = "misellia.business@gmail.com";
 
     return (
-        <div className="py-10 bg-zinc-900 w-full left-0 relative 2xl:px-28 xl:px-28 lg:px-20 md:px-32 sm:px-8">
+        <div className="pt-10 pb-4 bg-zinc-900 w-full left-0 relative 2xl:px-28 xl:px-28 lg:px-20 md:px-32 sm:px-8">
             <div className="flex flex-wrap justify-center">
                 <span className="font-semibold text-lg text-center">Follow Me On:</span>
             </div>
@@ -49,6 +49,7 @@ export default function Footer() {
             <div className="flex flex-wrap justify-center mt-10">
                 <a className="text-sm lg:text-lg text-center underline" href="mailto:misellia.business@gmail.com">{gmail}</a>
             </div>
+            <small className="mt-10 block text-[8px]">Designed & Made by Henry Salim</small>
         </div>
         
     )

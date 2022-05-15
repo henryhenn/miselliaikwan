@@ -11,8 +11,9 @@ export default function App() {
         const hero_text = document.querySelector("#hero-text");
         const hero_more = document.querySelector("#hero-more");
         const about = document.querySelector("#about");
+        const about_image = document.querySelector("#about-image");
+        const hero_number = document.querySelector("#hero-number");
         const about_offset = about.offsetTop;
-        const about_text_left = document.querySelector("#about-text-left");
         const about_text_right = document.querySelector("#about-text-right");
         const albums = document.querySelector("#albums");
         const album_offset = albums.offsetTop;
@@ -32,16 +33,17 @@ export default function App() {
 
         if(window.pageYOffset){
             hero_text.classList.remove('hero-slide-in');
-            hero_more.classList.remove('hero-more-slide-in');            
+            hero_more.classList.remove('hero-more-slide-in'); 
+            hero_number.classList.add("hero-number-slide-in");
         }
 
         if(window.pageYOffset >= about_offset){
-          about_text_right.classList.remove('about-slide-in-right')
-          about_text_left.classList.remove('about-slide-in-left');
+          about_text_right.classList.remove('about-slide-in-right');
         }
         
         if(window.pageYOffset >= hero_more_offset){
           about_heading.classList.remove('about-heading-slide-in');
+          about_image.classList.remove("about-image-slide-in");
         }
 
         if(window.pageYOffset >= album_offset){
